@@ -6,7 +6,7 @@ function debounce(fn , delay) {
         clearInterval(timer);
         timer = setTimeout(()=>
         fn.apply(this , args) , delay)  // Call the function after the delay
-
+ //This will ensure that the function is called with the correct context and arguments
     }
 }
 
